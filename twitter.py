@@ -47,7 +47,7 @@ with open('tsentiments.csv', 'w', newline='\n') as f:
 			print("\nTweet: Negative")
 			polarity = 'Negative'
 			n = n + 1
-		writer.writerow({'Tweet':text, 'Sentiment':polarity})		###use .encode('utf-8') if encode error occurs for text or polarity
+		writer.writerow({'Tweet':text, 'Sentiment':polarity}) #use .encode('utf-8') if encode error occurs for text or polarity
 		print(tweet.text)
 		
 print("\n------------------------------")
